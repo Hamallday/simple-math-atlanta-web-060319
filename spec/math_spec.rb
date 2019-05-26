@@ -1,45 +1,27 @@
-require 'spec_helper'
-
-describe "#addition" do 
-  it "adds two numbers together" do
-    expect(addition(5,4)).to eq(9)
-  end
+def addition(num1 = 5, num2 = 4)
+  puts num1+num2
 end
 
-describe "#subtraction" do
-  it "subtracts two numbers from each other" do
-    expect(subtraction(10,5)).to eq(5)
-  end
+def subtraction(num1=10, num2=5)
+puts num1-num2
 end
 
-describe "#division" do
-  it "divides one number by another" do
-    expect(division(50,2)).to eq(25)
-  end
+def division(num1=50, num2=2)
+puts num1/num2
 end
 
-describe "#multiplication" do
-  it "multiplies two numbers together" do
-    expect(multiplication(4,30)).to eq(120)
-  end
+def multiplication(num1=4, num2=30)
+puts num1*num2
 end
 
-describe "#modulo" do
-  it "returns the remainder of two numbers" do
-    expect(modulo(34, 5)).to eq(4)
-  end
+def modulo(num1=34, num2=5)
+puts num1%num2
 end
 
-describe "#square_root" do
-  it "returns the square root of a number" do
-    expect(square_root(81)).to eq(9)
-  end
+def square_root(num=81)
+puts Math.sqrt(num)
 end
 
-describe "order_of_operations" do
-  it "uses parenthesis to set the order of operations properly" do
-    expect(order_of_operation(7, 43, 23, 83)).to eq(18)
-  end
+def order_of_operation(num1=7, num2=43, num3=23, num4=83)
+puts num1 + ((num2 * num3) / num4)  #Hint:  __ + (( __ * __ ) / __ )
 end
-
-
